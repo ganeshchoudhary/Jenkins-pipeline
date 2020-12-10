@@ -13,13 +13,14 @@ pipeline{
         sh 'npm install'
         }
       }
-      }
-  stage("test"){
+      stage("test"){
       steps{
        
-  sh '''
+
         echo "Welcome dev branch "
-        '''       
+       
         }
       }
+      }
+
 }
