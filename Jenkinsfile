@@ -4,7 +4,7 @@ pipeline{
     stage("Welcome"){
       steps{
         sh '''
-        echo "Welcome dev branch "
+        sudo apt-get update
         '''
         }
       }
