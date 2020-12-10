@@ -4,7 +4,7 @@ pipeline{
     stage("Welcome"){
       steps{
         sh '''
-        echo "Welcome Ganesh"
+        echo "Welcome dev branch "
         '''
         }
       }
