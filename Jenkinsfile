@@ -5,7 +5,7 @@ pipeline{
   stages{
     stage("Welcome"){
       steps{
-        sh 'apk update'
+        sh 'mvn --v'
         }
       }
    
