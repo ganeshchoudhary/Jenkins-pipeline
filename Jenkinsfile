@@ -8,10 +8,7 @@ pipeline{
   stages{
     stage("Welcome"){
       steps{
-        sh '''
-        echo "tested"
-        mvn clean install
-        '''
+        sh 'mvn clean install'
         }
       }
    
