@@ -4,7 +4,7 @@ pipeline{
     stage("Welcome"){
       steps{
         sh '''
-        sudo apt-get update
+        echo "tested"
         '''
         }
       }
