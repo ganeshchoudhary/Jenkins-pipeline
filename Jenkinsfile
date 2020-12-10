@@ -13,7 +13,7 @@ pipeline{
       steps{
        
 
-        echo "Welcome dev branch "
+        sh 'ls'
        
         }
       }
