@@ -17,8 +17,9 @@ pipeline{
   stage("test"){
       steps{
        
-       echo "Welcome dev branch "
-       
+  sh '''
+        echo "Welcome dev branch "
+        '''       
         }
       }
 }
