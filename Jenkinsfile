@@ -2,7 +2,7 @@ pipeline {
     agent none
     stages {
         stage('ls') {
-            agent { any }
+            agent any
 
             steps {
                 sh 'ls'
