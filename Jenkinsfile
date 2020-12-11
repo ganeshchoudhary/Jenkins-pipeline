@@ -1,30 +1,13 @@
-
-pipeline{
-  agent any
- 
-  stages{
-    stage("Welcome"){
-      steps{
-        sh 'mvn --v'
+pipeline {
+    agent none
+    stages {
+         stage('Back-end') {
+            agent {
+                docker { image 'docker' }
+            }
+            steps {
+                sh 'docker build -f Dockerfile  -t test01 .'
+            }
         }
-      }
-     stage("build"){
-      steps{
-        sh 'mvn clean package'
-        sh 'mvn clean install'
-       
-        }
-      }
-   
-   
-      stage("test"){
-      steps{
-       
-
-        sh 'ls'
-       
-        }
-      }
-      }
-
+    }
 }
