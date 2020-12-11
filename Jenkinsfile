@@ -13,9 +13,7 @@ pipeline {
             agent { dockerfile true }
 
             steps {
-                sh '''
-                echo "testing"
-                '''
+                sh 'docker build -f Dockerfile  -t test01 .'
             }
         }
     }
