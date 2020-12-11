@@ -2,11 +2,12 @@ pipeline {
     agent none
     stages {
          stage('Back-end') {
-            agent {
-                docker { image 'docker' }
-            }
+            agent { dockerfile true }
+
             steps {
-                sh 'docker build -f Dockerfile  -t test01 .'
+                sh '''
+                echo "testing"
+                '''
             }
         }
     }
